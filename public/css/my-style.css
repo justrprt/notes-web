@@ -1,22 +1,29 @@
 html, body {
    background-color: #212024;
    color: whitesmoke;
+   font-size: 0.94em !important;
 }
 
 #main {
-    margin-left: 85px;
+    margin-left: 65px;
 }
+
+/* navbar custom style */
+.mybrand{
+    width: 1.4rem;
+}
+
 
 /* collapse hover sidebar */
 .sidebar {
     height: 100%;
-    width: 85px;
+    width: 65px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: #212024;
-    transition: 0.2s;
+    transition: 0.1s;
     transition-delay: 0;
     padding-top: 60px;
     white-space: nowrap;
@@ -25,7 +32,7 @@ html, body {
 
 .sidebar-shadow{
     box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.4);
-    transition: 0.2s;
+    transition: 0.1s;
     transition-delay: 0.4s;
 }
 
@@ -39,7 +46,6 @@ html, body {
 
 .sidebar a:hover {
     color: #f1f1f1;
-    
 }
 
 .material-icons,
@@ -54,16 +60,67 @@ margin-right: 30px;
 
 /* navbar custom style */
 
+.navbar-nav > li > a, .navbar-brand{
+    padding-top: 0.2rem !important;
+    padding-bottom: 0.2rem !important;
+}
+.navbar {
+    min-height: 32px !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+}
+
 .bg-dark {
     background-color: #202124!important;
 }
 
 .mynav-shadow {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .mynav-border {
-    border-bottom: 2px solid #5F6368; 
+    border-bottom: 1px solid #5F6368; 
 }
 
+/* scrollbar syle */
+
+.style-3::-webkit-scrollbar-track{
+	background-color: #202124;
+}
+
+.style-3::-webkit-scrollbar{
+	width: 9px;
+	background-color: #202124;
+}
+
+.style-3::-webkit-scrollbar-thumb{
+	background-color: #666666;
+}
+
+/* card custom style */
+
+.card {
+    background-color: #202124!important;
+    color: whitesmoke;
+    border: 1px solid #5F6368;
+    border-radius: 0.6rem;
+    width: 12rem;
+}
+
+.mycard-icon {
+    width: 20px;
+    padding: 0;
+    margin: auto;
+}
+
+.mycard-align {
+    display: flex;
+    justify-content:space-between;
+    margin-left: 0.08rem;
+    margin-right: 0.08rem;
+}
+
+.myborder-test{
+    border: 1px solid white;
+}
