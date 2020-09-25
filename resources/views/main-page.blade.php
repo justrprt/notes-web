@@ -2,6 +2,19 @@
 
 @section('content')
 <div class="container-fluid mycontainer">
+
+<div class="row justify-content-center">
+    <form class="mt-4 mb-4">
+
+        <div class="form-group my-form-group">
+            {{-- <input type="text" id="input-title" class="form-control my-input" placeholder="Title"> --}}
+
+            <input type="text" id="input-notes" class="form-control my-input" placeholder="Take a note...">
+        </div>
+
+      </form>
+</div>
+
 <div class="row ml-lg-3 mr-lg-3">
 
     <div class="card mr-lg-3">

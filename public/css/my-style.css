@@ -104,7 +104,7 @@ margin-right: 30px;
     background-color: #202124!important;
     color: whitesmoke;
     border: 1px solid #5F6368;
-    border-radius: 0.6rem;
+    border-radius: 0.4rem;
     width: 12rem;
 }
 
@@ -123,4 +123,32 @@ margin-right: 30px;
 
 .myborder-test{
     border: 1px solid white;
+}
+
+.my-input{
+    outline: none;
+    box-shadow:none !important;
+    padding: 0.8rem;
+    background-color: #202124!important;
+    color: whitesmoke;
+    border: none;
+}
+
+.my-form-group{
+    border: 1.4px solid #5F6368;
+    border-radius: 0.4rem;
+    box-sizing: border-box;
+    /* border: 1px solid white; */
+}
+
+.form-control:focus {
+    border: 0px solid #5F6368;
+}
+
+#input-title{
+
+}
+
+#input-trigger{
+
 }

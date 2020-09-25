@@ -19,7 +19,7 @@
     </head>
 
 
-<body class="style-3">
+<body class="style-3" onclick="toggleActive()">
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark mynav-border" id="mynav">
         <a class="navbar-brand" href="">
             <img class="d-inline-block mybrand myborder-test" src="{{ asset('css/228.png') }}">
