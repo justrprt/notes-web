@@ -32,8 +32,6 @@ function toggleSidebar() {
     }
 }
 
-var inputToggler = true;
-
 function toggleActive(){
     
     var myActive = document.activeElement.id;
@@ -46,13 +44,30 @@ function toggleActive(){
             $("#input-title").remove();
         }
 }
-    
-// jquery funtion
 
-// $("#input-trigger, #input-title").focus(function(){
-//     $("<input type='text' class='form-control my-input' id='input-title' placeholder='Title''>").prependTo(".form-group");
-// });
 
-// $("#input-trigger, #input-title").focusout(function(){
-//     $("#input-title").remove();
-// });
+function resizeGridItem(item){
+    grid = document.getElementsByClassName("grid")[0];
+    rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+    rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
+    rowSpan = Math.ceil((item.querySelector('.my-content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
+    item.style.gridRowEnd = "span "+rowSpan;
+}
+
+function resizeAllGridItems(){
+    allItems = document.getElementsByClassName("my-item");
+    for(x=0;x<allItems.length;x++){
+        console.log(allItems[x]);
+        resizeGridItem(allItems[x]);
+    }
+}
+
+window.onload = resizeAllGridItems();
+
+window.addEventListener("resize", resizeAllGridItems);
+
+function resizeInstance(instance){
+    item = instance.elements[0];
+    resizeGridItem(item);
+}
+
