@@ -1,4 +1,3 @@
-
 var mini = true;
 var mySidebar = document.getElementById("mySidebar");
 var myNav = document.getElementById('mynav');
@@ -41,6 +40,10 @@ function toggleActive(){
                 $("<input type='text' class='form-control my-input' id='input-title' placeholder='Title'>").prependTo(".form-group");
             }
         }else{
+            $('#add-note').blur(function(){
+                $('#input-notes').text('');
+                alert("added new note");
+            });
             $("#input-title").remove();
         }
 }
@@ -70,4 +73,15 @@ function resizeInstance(instance){
     item = instance.elements[0];
     resizeGridItem(item);
 }
+
+$(function(){
+
+$('pop-effect').click(function(){
+    $(this).fadeIn();
+});
+
+
+});
+
+
 

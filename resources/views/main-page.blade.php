@@ -5,7 +5,7 @@
 
 <div class="row justify-content-center">
 
-    <form class="col-4 mt-4 mb-4">
+    <form class="col-4 mt-4 mb-4" id="add-note" autocomplete="off" >
 
         <div class="form-group my-form-group">
             {{-- <input type="text" id="input-title" class="form-control my-input" placeholder="Title"> --}}
@@ -13,11 +13,11 @@
             <input type="text" id="input-notes" class="form-control my-input" placeholder="Take a note...">
         </div>
 
-      </form>
+    </form>
 </div>
 
 {{-- <div class="row ml-lg-3 mr-lg-3"> --}}
-    <div class="grid">
+    <div class="grid px-5">
     <div class="my-item">
         <div class="my-content">
             <h5 class="card-title">1st Card</h5>
